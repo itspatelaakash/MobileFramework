@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Suite" parallel="tests" thread-count="4" >
+
+  <listeners>
+    <listener class-name="listeners.Listeners"/>
+  </listeners>
+
+  <test thread-count="5" name="Test">
+    <parameter name="port" value="4723"/>
+    <parameter name="udid" value="OFLRPB5TVOKNJNMV"/>
+
+    <classes>
+      <class name="RelianceFoundation.JioRFI.AutomationScripts.landingTest"/>
+      <!--<class name="RelianceFoundation.JioRFI.AutomationScripts.myAccountTest"/>-->
+    </classes>
+  </test> <!-- Test -->
+
+  <test thread-count="5" name="ABC">
+    <parameter name="port" value="4727"/>
+    <parameter name="udid" value="02157df28872cf0e"/>
+    <classes>
+      <!--<class name="RelianceFoundation.JioRFI.AutomationScripts.landingTest"/>-->
+      <class name="RelianceFoundation.JioRFI.AutomationScripts.myAccountTest"/>
+    </classes>
+  </test> <!-- Test -->
+  <test thread-count="5" name="XYZ">
+    <parameter name="port" value="4827"/>
+    <parameter name="udid" value="d07ecc65"/>
+    <classes>
+      <!--<class name="RelianceFoundation.JioRFI.AutomationScripts.landingTest"/>-->
+      <class name="RelianceFoundation.JioRFI.AutomationScripts.myAccountTest"/>
+    </classes>
+  </test> <!-- Test -->
+  <test thread-count="5" name="PQR">
+    <parameter name="port" value="4927"/>
+    <parameter name="udid" value="8de4c8f1"/>
+    <classes>
+      <!--<class name="RelianceFoundation.JioRFI.AutomationScripts.landingTest"/>-->
+      <class name="RelianceFoundation.JioRFI.AutomationScripts.landingTest"/>
+    </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->
