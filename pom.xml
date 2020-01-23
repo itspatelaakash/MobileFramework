@@ -62,7 +62,18 @@
 			<version>1.1</version>
 		</dependency>
 
-		<!-- http://mvnrepository.com/artifact/org.apache.xmlbeans/xmlbeans -->
+	  <!-- https://mvnrepository.com/artifact/io.rest-assured/rest-assured -->
+	  <dependency>
+		  <groupId>io.rest-assured</groupId>
+		  <artifactId>rest-assured</artifactId>
+		  <version>3.0.0</version>
+		  <scope>test</scope>
+	  </dependency>
+
+
+
+
+	  <!-- http://mvnrepository.com/artifact/org.apache.xmlbeans/xmlbeans -->
 		<dependency>
 			<groupId>org.apache.xmlbeans</groupId>
 			<artifactId>xmlbeans</artifactId>
